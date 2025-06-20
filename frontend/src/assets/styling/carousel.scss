@@ -1,0 +1,41 @@
+// styling/carousel.scss
+
+.genre-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    
+    .genre-tag {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      font-size: 0.9rem;
+    }
+  }
+  
+  .publishing-packages {
+    .package {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      
+      h5 {
+        color: #ffd700;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    
+    svg {
+      color: #4dabf7;
+    }
+  }

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #362b2b;
+  position: relative;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Optional: Add subtle animation to background */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40vh;
+  background: linear-gradient(to right, #3b71ca, #3a86ff);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  z-index: -1;
+  opacity: 0.05;
+}

@@ -1,0 +1,38 @@
+.book-categories-slide {
+    text-align: center;
+    margin: 20px 0;
+  
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+  
+    .category-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+  
+      img {
+        width: 10%;
+        height: 100px;
+        border-radius: 8px;
+      }
+  
+      h3 {
+        margin: 10px 0;
+        font-size: 1.5rem;
+      }
+  
+      p {
+        color: #555;
+        font-size: 1rem;
+      }
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }

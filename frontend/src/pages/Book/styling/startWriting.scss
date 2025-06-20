@@ -1,0 +1,173 @@
+.create-form {
+    background-color: #f0f8ff;
+    padding: 2.5rem; // Increased padding for a more spacious feel
+    border-radius: 15px; // Slightly larger border radius
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif; // Set a clean font
+  }
+  
+  .create-book-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .form-left {
+    flex: 1;
+    margin-right: 2.5rem; // More space between left and right
+  }
+  
+  .form-right {
+    flex: 2;
+  }
+  
+  .left-content {
+    text-align: left;
+  
+    h2 {
+      font-size: 2.5rem; // Increased font size
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+  
+    p.subtitle {
+      font-size: 1.5rem; // Increased font size
+      color: #34495e;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .form-header {
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 1.5rem;
+  
+    h3 {
+      font-size: 1.8rem; // Increased font size
+      color: #2980b9;
+      font-weight: bold;
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  
+    label {
+      font-weight: bold;
+      color: #34495e;
+      font-size: 1.1rem; // Increased font size
+    }
+  
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 1rem; // Increased padding for better usability
+      border: 1px solid #bdc3c7;
+      border-radius: 5px;
+      font-size: 1rem; // Maintain a good size for inputs
+      margin-top: 0.5rem;
+  
+      &:focus {
+        border-color: #3498db; // Highlight border on focus
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); // Subtle shadow effect
+      }
+    }
+  
+    .error-message {
+      color: #e74c3c;
+      font-size: 0.9rem;
+    }
+  }
+  
+  .image-upload-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    .image-upload-container {
+      display: flex;
+      align-items: center;
+  
+      .upload-placeholder {
+        border: 2px dashed #3498db;
+        padding: 1.2rem; // Increased padding
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background: rgba(52, 152, 219, 0.1);
+        }
+      }
+    }
+  
+    .image-preview {
+      position: relative;
+      margin-right: 1rem;
+  
+      img {
+        width: 120px; // Slightly larger preview
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      .image-actions {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+  
+        button {
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          color: #e74c3c;
+          font-size: 1.2rem; // Increased size for visibility
+        }
+      }
+    }
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 0.8rem 1.5rem; // Increased padding
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem; // Increased font size
+      transition: background 0.3s;
+  
+      &:hover {
+        background-color: #2980b9;
+      }
+  
+      &.cancel {
+        background-color: #e74c3c;
+  
+        &:hover {
+          background-color: #c0392b;
+        }
+      }
+    }
+  }
+  
+  .success-notification {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  
+    .success-icon {
+      margin-right: 0.5rem;
+    }
+  }

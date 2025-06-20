@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.my-book-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #090b0d;
+  padding: 20px;
+ 
+}
+
+.book-session {
+  width: 80%;
+   height: 120vh;
+   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #27ae60;
+}
+
+.top-title-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 90%;
+
+
+  h1 {
+    font-size: 2.5rem;
+    color: #e0e6ec;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+  }
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+  --main-focus: #2d8cf0;
+  --font-color: #dedede;
+  --bg-color-sub: #222;
+  --bg-color: #323232;
+  --main-color: #dedede;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(25px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  stroke: var(--main-color);
+}
+
+.button:hover {
+  background: var(--bg-color);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 140px;
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+
+  .book-spine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #4a6fa5;
+    z-index: -1;
+  }
+
+  .page-corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+  }
+
+  .ink-splash {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+}
+.display-Mybook {
+    width: 100%;
+    height: 101pc;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7; /* Light background */
+    border-radius: 8px;
+}
+.myBook_header{
+  width: 100%;
+  height: 60px;
+  border:2px solid #f1f3f5;
+  display: flex;
+  align-items: start;
+}
+
+h2 {
+    color: var(--bg-color); /* Use your defined color variable */
+    font-size: 2em; /* Increased size for visibility */
+    font-weight: bold;
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.books-grid {
+    width: 100%;
+    height: 92%;
+    margin: 20px;
+
+   
+   //background-color: #090b0d; 
+
+    
+}
+
+.book-card {
+  width: 70%;
+  height: 20%;
+      border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    .book-card-contant{
+      width: 100%;
+      height: 100%;//background-color: #27ae60;
+
+    }
+    .book-status {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.85rem;
+        font-weight: bold;
+        border-radius: 5px;
+        text-transform: uppercase;
+        
+        &.draft {
+            background: #f39c12;
+            color: white;
+        }
+
+        &.published {
+            background: #27ae60;
+            color: white;
+        }
+    }
+
+    .book-title {
+        font-size: 1.5rem; /* Title size */
+        margin: 0.5rem 0;
+        color: #2c3e50; /* Title color */
+    }
+
+    .chapter-count {
+        margin: 0.25rem 0;
+        color: #7f8c8d; /* Chapter count color */
+    }
+
+    .update-info {
+        margin: 0.5rem 0;
+        font-size: 0.85rem;
+        color: #bdc3c7; /* Update info color */
+    }
+
+    .book-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Align items vertically */
+        margin-top: 10px;
+
+        .continue-btn {
+            background: #e67e22; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: #d35400; /* Darker on hover */
+            }
+        }
+
+        .action-icons {
+            display: flex;
+            gap: 8px; /* Space between icons */
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: #2980b9; /* Icon color */
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #3498db; /* Darker on hover */
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,390 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+  }
+  
+  .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+  }
+  // userdeashbraod
+  
+  /* Sidebar styling */
+
+
+  .dashboard-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150pc;
+    background-color: #776f22;
+  }
+  /* Main content styling */
+  .main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 100vh;
+
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .header-left h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  
+  .header-left p {
+    color: #666;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-icon,
+  .notification-icon {
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Dashboard grid layout */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .balance-card {
+    background-color: #f26d21;
+    color: white;
+  }
+  
+  .income-card {
+    background-color: #333;
+    color: white;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .card-amount {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .percentage-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .positive {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .negative {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .card-chart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 60px;
+    opacity: 0.5;
+  }
+  
+  /* Sales overview styling */
+  .sales-overview {
+    grid-column: span 3;
+    padding-bottom: 40px;
+  }
+  
+  .overview-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .overview-title h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .overview-title p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .overview-legend {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+  }
+  
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  
+  .revenue-dot {
+    background-color: #f26d21;
+  }
+  
+  .transactions-dot {
+    background-color: #333;
+  }
+  
+  .chart-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  
+  .chart-y-axis {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 15px;
+  }
+  
+  .chart-y-axis span {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .chart-x-axis {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 60px;
+  }
+  
+  .chart-x-axis span {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .chart-graph {
+    margin-left: 60px;
+    height: 100%;
+    width: calc(100% - 60px);
+    position: relative;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .chart-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .revenue-line {
+    stroke: #f26d21;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .transactions-line {
+    stroke: #333;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .month-highlight {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.03);
+    width: 8.33%;
+    height: 100%;
+    left: 50%;
+    pointer-events: none;
+  }
+  
+  /* Bottom row styling */
+  .schedule-card,
+  .email-activity-card {
+    height: 260px;
+  }
+  
+  .schedule-card {
+    grid-column: span 2;
+  }
+  
+  .schedule-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .schedule-event {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-date {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .schedule-time {
+    font-size: 42px;
+    font-weight: 700;
+    color: #f26d21;
+    margin-bottom: 20px;
+  }
+  
+  .attendees {
+    display: flex;
+    align-items: center;
+  }
+  
+  .attendee {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    border: 2px solid white;
+    margin-left: -10px;
+    overflow: hidden;
+  }
+  .attendee img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .attendee:first-child {
+    margin-left: 0;
+  }
+  
+  .attendee-info {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  
+  /* Email activity styling */
+  .email-activity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .activity-gauge {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .gauge-background {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #eee;
+  }
+  
+  .gauge-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gauge-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .gauge-number {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .gauge-label {
+    font-size: 14px;
+    color: #666;
+  }

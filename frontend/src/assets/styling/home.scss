@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;500;600;700;800;900&display=swap');
+
+.home {
+  width: 100%;
+  height: 370vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(250, 251, 251);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+.right-items {
+  width: 15%;
+  height: 100%;
+  margin-top: 20px;
+  align-items: flex-start;
+  display: flex;
+ // background-color: #1e48c9;
+}
+
+.logo {
+  width: 16%;
+  height: 100px;
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-items {
+  width:55%;
+  height:100%;
+   display: flex;
+  align-items: center;
+  //background-color: #05ec80;
+  justify-content: space-evenly;
+
+
+}
+
+.left-items a {
+  color: rgb(66, 61, 61);
+  font-size: 1.7em;
+  font-family: 'Kanit', sans-serif;
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.left-items a:hover {
+  background-color: white;
+  color: rgb(48, 40, 40);
+  border-radius: 10px;
+  
+}
+
+.left-items button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: black;
+  font-size: 1.7em;
+  font-family: 'Kanit', sans-serif;
+  background-color: transparent;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  top: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.left-items button:hover {
+  background-color: white;
+  color: rgb(48, 40, 40);
+  border-radius: 10px;
+  
+}
+.login-btn {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent; /* Set background to transparent */
+}
+
+
+
+/* Other existing styles remain unchanged */
+
+
+.display-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  
+  
+/* From Uiverse.io by Cornerstone-04 */ 
+.box {
+    width: 130px;
+    height: 56px;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    top: 10px;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    font-size: 1.3em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   border: 0.1px solid #2a2d43;
+  }
+  .box1{
+    width: 60px;
+    height: 56px;
+    float: left;
+    font-weight: 600;
+    color: black;
+    font-size: 1.6em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .5s linear;
+    position: relative;
+    top: 22px;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  .intro-contact {
+    width: 100%;
+    height: 250vh;
+  
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+.intro-heading {
+  font-size: 2.4rem; /* Size of the heading */
+  font-weight: 700; /* Bold weight */
+  color: #253444; /* Dark color for contrast */
+  text-align: center; /* Center alignment */
+  transform: translateY(-21pc);
+
+  text-shadow: 2px 2px 4px rgba(12, 11, 11, 0.3); /* Subtle text shadow for depth */
+  padding: 0 20px; /* Horizontal padding for spacing */
+  
+  @media (max-width: 768px) {
+    font-size: 2rem; /* Responsive font size for smaller screens */
+  }
+}
+
+.block3,
+.block2,
+.block1 {
+    width: 100%;
+    height: 45pc;
+    //background-color: #2a2d43;
+    padding: 30px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    
+}
+
+.images{
+    width: 44%;
+    height: 100%;
+    margin: 50px;
+    //background-color: aliceblue
+}
+.contact h4{
+    margin: 5px;
+    font-size: 2em;
+    text-decoration: underline;
+    
+    }
+.contact p{
+margin: 5px;
+font-size: 2em;
+
+}
+.contact{
+    width: 68%;
+    height: 70%;
+    //background-color: #433e2a;
+    text-align: start;
+    font-size: xx-larger;
+    position: relative;
+    top: -100px;
+  
+
+
+}
+.slider{
+    width: 100%;
+    height: 10pc;
+    //background-color: #94790e;
+ 
+}
+.container-my-1{
+    width: 100%;
+    height: 55pc;
+    position: relative;
+    top: 0pc;
+    background-color: #1c243b;
+}
+
+@keyframes topUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-topUp {
+    animation: topUp 1s forwards;
+}
+
+.scroll-animation {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start from 50px below */
+}
+
+
+
+@media (max-width: 500px) {
+    .swiper_container {
+        height: 47rem;
+    }
+    
+    .swiper-slide {
+        width: 28rem !important;
+        height: 36rem !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .slider-controler .swiper-button-next,
+    .slider-controler .swiper-button-prev {
+        left: 30% !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .slider-controler .swiper-button-next {
+        left: 80% !important;
+    }
+    
+    .slider-controler .swiper-button-prev {
+        left: 20% !important;
+    }
+}
+   
+
+//user profile header in nav
+
+
+.user-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-info p {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.user-info small {
+  color: #6c757d;
+  font-size: 0.85rem;
+}

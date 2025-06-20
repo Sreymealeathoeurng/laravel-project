@@ -1,0 +1,277 @@
+.author-dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    .dashboard-container {
+      display: flex;
+      flex: 1;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      
+      .user-info {
+        text-align: center;
+        margin-bottom: 30px;
+        
+        .avatar {
+          width: 80px;
+          height: 80px;
+          background: #4a6fa5;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          margin: 0 auto 10px;
+        }
+        
+        .role-badge {
+          display: inline-block;
+          background: #4a6fa5;
+          padding: 3px 10px;
+          border-radius: 12px;
+          font-size: 0.8rem;
+          margin-top: 5px;
+        }
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+          padding: 12px 15px;
+          margin-bottom: 5px;
+          border-radius: 4px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          
+          &:hover, &.active {
+            background: #34495e;
+          }
+          
+          .icon {
+            margin-right: 10px;
+          }
+        }
+      }
+      
+      .create-button {
+        margin-top: auto;
+        background: #27ae60;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        
+        svg {
+          margin-right: 8px;
+        }
+        
+        &:hover {
+          background: #2ecc71;
+        }
+      }
+    }
+    
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      background: #f5f7fa;
+      
+      .page-title {
+        color: #2c3e50;
+        margin-bottom: 30px;
+      }
+      
+      .books-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        
+        .book-card {
+          background: white;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          transition: transform 0.2s;
+          
+          &:hover {
+            transform: translateY(-5px);
+          }
+          
+          .book-cover {
+            height: 150px;
+            background: #ecf0f1;
+            position: relative;
+            
+            .published-badge, .draft-badge {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              padding: 3px 8px;
+              border-radius: 12px;
+              font-size: 0.7rem;
+              font-weight: bold;
+            }
+            
+            .published-badge {
+              background: #27ae60;
+              color: white;
+            }
+            
+            .draft-badge {
+              background: #f39c12;
+              color: white;
+            }
+          }
+          
+          .book-info {
+            padding: 15px;
+            
+            h3 {
+              margin: 0 0 10px;
+              color: #2c3e50;
+            }
+            
+            p {
+              margin: 5px 0;
+              color: #7f8c8d;
+              font-size: 0.9rem;
+            }
+          }
+          
+          .book-actions {
+            display: flex;
+            padding: 10px 15px;
+            border-top: 1px solid #ecf0f1;
+            
+            button {
+              flex: 1;
+              padding: 8px;
+              border: none;
+              background: none;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              
+              svg {
+                margin-right: 5px;
+              }
+              
+              &.edit-btn {
+                color: #3498db;
+                
+                &:hover {
+                  color: #2980b9;
+                }
+              }
+              
+              &.publish-btn {
+                color: #27ae60;
+                
+                &:hover {
+                  color: #2ecc71;
+                }
+              }
+              
+              &.delete-btn {
+                color: #e74c3c;
+                
+                &:hover {
+                  color: #c0392b;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      
+      .modal {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        width: 400px;
+        max-width: 90%;
+        
+        h2 {
+          margin-top: 0;
+          color: #2c3e50;
+        }
+        
+        .form-group {
+          margin-bottom: 20px;
+          
+          label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+          }
+          
+          input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          }
+        }
+        
+        .modal-actions {
+          display: flex;
+          justify-content: flex-end;
+          gap: 10px;
+          
+          button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            
+            &.cancel-btn {
+              background: #ecf0f1;
+              border: 1px solid #bdc3c7;
+              
+              &:hover {
+                background: #bdc3c7;
+              }
+            }
+            
+            &.create-btn {
+              background: #27ae60;
+              color: white;
+              border: none;
+              
+              &:hover {
+                background: #2ecc71;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
