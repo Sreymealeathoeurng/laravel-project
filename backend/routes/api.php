@@ -83,4 +83,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/library/progress', [LibraryController::class, 'updateProgress']);
 
    
+<<<<<<< HEAD
 });
+=======
+});
+
+>>>>>>> 375cf101e51dafca7a254f2bda8ceceb6afc71e7
