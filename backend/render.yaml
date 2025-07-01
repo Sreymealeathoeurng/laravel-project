@@ -1,0 +1,15 @@
+version: 1
+services:
+  - type: web
+    name: laravel-project-17
+    env: php
+    plan: free
+    buildCommand: cd backend && composer install
+    startCommand: cd backend && php artisan serve --host=0.0.0.0 --port=10000
+    envVars:
+     DB_CONNECTION=mysql
+      DB_HOST=127.0.0.1
+      DB_PORT=3306
+      DB_DATABASE=owb
+      DB_USERNAME=root
+      DB_PASSWORD=111999
