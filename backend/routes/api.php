@@ -85,7 +85,3 @@ Route::middleware('auth:sanctum')->group(function () {
    
 });
 
-"routes": [{
-    "src": "/(.*)",
-    "dest": "/api/index.php"
-}],
